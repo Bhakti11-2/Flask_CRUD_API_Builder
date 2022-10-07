@@ -26,6 +26,7 @@ You can view a live demo at: [crudapibuilder.herokuapp.com](https://crudapibuild
    
    `$ pip install flask`
 
+---
 ## API's Supported
  - **L**ist: `GET /<entity>`
  - **C**reate: `POST /<entity>`
@@ -33,16 +34,21 @@ You can view a live demo at: [crudapibuilder.herokuapp.com](https://crudapibuild
  - **U**pdate: `PUT /<entity>/<id>`
  - **D**elete: `DELETE /<entity>/<id>`
 
-## Phase-1 Deliverables
+---
+## Progress tracker
+
+### Phase-1 Deliverables
  - [x] Ability to define custom structure with different data types.
  - [x] Persistent storage using `JSON`.
  - [ ] Validate syntax of structure.
  - [ ] Design with Bootstrap.
  - [ ] Ability to define required and optional attributes.
 
-## Phase-2 Deliverables
+### Phase-2 Deliverables
  - [ ] Implement status codes in boilerplate APIs
  - [ ] Persistent storage using database.
- - [ ] Ability to define complex relationships between attributes.
  - [ ] Ability to define data constraints like: `unique`, `min-length`, `max-length`, etc.
  - [ ] Deploy an instance of `boilerplate.py` on the fly.
+
+### Phase-3 Deliverables
+ - [ ] Ability to define multiple entities and relationships between them.
