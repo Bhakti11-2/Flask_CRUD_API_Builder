@@ -1,12 +1,25 @@
 <html>
    <body>
       <form action = "/result" method = "POST">
-         <p>Object/Entity Name <input type = "text" name = "object/entity_name" /></p>
-         <label for="text">Define Structure:</label>
+         <h1>Flask CRUD API Builder</h1>
+         <p>This utility helps you build boiler-plate code for sample REST API with simple CRUD functionality.</p>
+         <p><b>Object/Entity Name: </b><input type = "text" name = "object/entity_name" /></p>
+         <label for="text"><b>Define structure in below format where key is API attribute name and value is data type (python):</b></label>
          <br>
          <textarea id="text" name="structure" rows="12" cols="50">{{sample_structure}}</textarea>
          <br/>
          <p><input type = "submit" value = "Build" /></p>
+         <p><i>After deploying boilerplate.py, you will have below REST API:</i></p>
+         <ul>
+            <i>
+            <li>List: GET /&lt;entity&gt;</li>
+            <li>Create: POST /&lt;entity&gt;</li>
+            <li>Retrieve: GET /&lt;entity&gt;/&lt;id&gt;</li>
+            <li>Update: PUT /&lt;entity&gt;/&lt;id&gt;</li>
+            <li>Delete: DELETE /&lt;entity&gt;/&lt;id&gt;</li>
+            </i>
+         </ul>
+
       </form>
    </body>
 </html>
