@@ -34,7 +34,7 @@ def hello_world():
    return 'Hello World'
 
 # List or Create api
-@app.route('/bhakti', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def list_create():
     if request.method == 'GET':
         with open(jsonfile) as f:
@@ -57,7 +57,7 @@ def list_create():
 
 
 # get api
-@app.route('/bhakti/<int:id>', methods=['GET'])
+@app.route('//<int:id>', methods=['GET'])
 def get_id(id):
     with open(jsonfile) as f:
         data = json.loads(f.read())
@@ -67,7 +67,7 @@ def get_id(id):
     return "Not found"
 
 # update api
-@app.route('/bhakti/<int:id>', methods = ['PUT'])
+@app.route('//<int:id>', methods = ['PUT'])
 def update(id):
     with open(jsonfile) as f:
         data = json.loads(f.read())
@@ -84,7 +84,7 @@ def update(id):
     return "Not found"
 
 # delete api
-@app.route('/bhakti/<int:id>', methods = ['DELETE'])
+@app.route('//<int:id>', methods = ['DELETE'])
 def delete(id):
     with open(jsonfile) as f:
         data = json.loads(f.read())
