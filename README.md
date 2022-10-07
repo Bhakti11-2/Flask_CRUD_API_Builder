@@ -22,9 +22,9 @@ You can view a live demo at: [crudapibuilder.herokuapp.com](https://crudapibuild
    ```python
    flask run
    ```
-   - Pre-requisite:
-
-     `$ pip install flask`
+   Pre-requisite:
+   
+   `$ pip install flask`
 
 ## API's Supported
  - **L**ist: `GET /<entity>`
