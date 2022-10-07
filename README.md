@@ -34,7 +34,7 @@ You can view a live demo at: [crudapibuilder.herokuapp.com](https://crudapibuild
  - **D**elete: `DELETE /<entity>/<id>`
 
 ## Phase-1 Deliverables
- - [x] Ability to define custom structure with different data types.
+ - [x] :white_check_mark: Ability to define custom structure with different data types.
  - [x] Persistent storage using `JSON`.
  - [ ] Design with Bootstrap.
  - [ ] Ability to define required and optional attributes.
