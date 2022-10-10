@@ -16,7 +16,7 @@ def inputdata():
 @app.route('/result',methods = ['POST'])
 def final_data():
    if request.method == 'POST':
-      path_name = request.form["object/entity_name"]
+      path_name = request.form["entity"]
       structure_format = request.form["structure"]
       with open("boilerplate_template.py", "r") as f:
          data = f.read()
