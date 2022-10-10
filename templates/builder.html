@@ -30,11 +30,12 @@
             <form action = "/result" method = "POST">
                 <div class="form-group">
                     <label for="entity">Entity Name:</label>
+                    <small id="entityHelp" class="form-text text-muted">This becomes base url for all API's</small>
                     <input type="text" id="entity" name="entity" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="structure">Define structure:</label>
-                    <p>Key is API attribute name and value is data type (python)</p>
+                    <small id="entityHelp" class="form-text text-muted">Key is API attribute name and value is data type (python)</small>
                     <textarea class="form-control" id="structure" name="structure" rows="5">{{sample_structure}}</textarea>
                 </div>
                 <div class="row">
